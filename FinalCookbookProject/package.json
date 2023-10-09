@@ -1,0 +1,17 @@
+{
+  "name": "finalcookbookproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mssql": "^8.1.0",
+    "nodemon": "^2.0.16",
+    "tedious": "^14.4.0"
+  }
+}

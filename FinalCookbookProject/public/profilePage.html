@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+  <title>Cookbook S2G2</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Cookbook</a>
+
+    <button id="dropdown" class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="bi-list"></i>
+      Menu
+    </button>
+    <div class="navbar-collapse collapse show" id="navbarResponsive" style="">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger active" href="recipes.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="profilePage.html">Your Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" data-toggle="modal" href="#createAccountModal">Create
+            Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="profilePage.html">Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="profilePage" class="">
+
+    <!-- Cover Image Block -->
+    <div id="profileCoverImage">
+      <div id="coverImageText" class="page-container container">
+        <div id="bigEmptySpace"></div>
+        <div id="bigEmptySpace"></div>
+        <h1 id="bigTitle">Chef Lagasse</h1>
+      </div>
+      <a href="#changeProfilePicModal" data-toggle="modal">
+        <div id="profilePictureContainer">
+          <img class="profilePicture col-5" src="images/lagasse.jpg" alt="">
+        </div>
+      </a>
+    </div>
+
+
+    <div id="starContainer">
+      <img class="star" src="images/Star.png" alt="">
+      <img class="star" src="images/Star.png" alt="">
+      <img class="star" src="images/Star.png" alt="">
+      <img class="star" src="images/Star.png" alt="">
+      <img class="star" src="images/Star.png" alt="">
+    </div>
+
+    <!-- Short Description Block -->
+    <div id="biography">
+      <div id="coverImageText" class="page-container container">
+        <div id="emptySpace"></div>
+        <h1 id="subTitle"><b>Biography: </b></h1>
+        <p>Hi, I like to cook pizza. Emeril John Lagassé III is an American celebrity chef, restaurateur, television
+          personality, cookbook author, and National Best Recipe award winner for his "Turkey and Hot Sausage Chili"
+          recipe in 2003.</p>
+      </div>
+    </div>
+
+    <div id="chefRecipes">
+      <div id="profileCoverImage">
+        <div id="coverImageText" class="page-container container">
+          <h1 id="bigTitle">Recipes</h1>
+        </div>
+      </div>
+
+
+      <div id="masterRecipeList">
+        <div class="feedInRecipes">
+
+          <div class="recipeBox columns">
+            <a href="index.html">
+              <h4>Recipe Name</h4>
+              <img class="recipeThumbnail" src="images/pizza1.webp" alt="">
+              <div id="starContainer2">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+              </div>
+            </a>
+          </div>
+
+          <div class="recipeBox columns">
+            <a href="index.html">
+              <h4>Recipe Name</h4>
+              <img class="recipeThumbnail" src="images/pizza1.webp" alt="">
+              <div id="starContainer2">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+                <img class="star" src="images/Star.png" alt="">
+              </div>
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contact">
+      <div id="coverImageText" class="page-container">
+        <div id="emptySpace"></div>
+        <h1 id="subTitle"><b>Contact: </b></h1>
+        <p id="contactInfo"><b class="phone">Phone: 555-555-5555</b><br>
+          <b class="email">Email: email123@email.com</b>
+        </p>
+        <div id="bigEmptySpace"></div>
+      </div>
+    </div>
+
+    <button id="fab" type="button" class="btn bmd-btn-fab" data-toggle="modal" data-target="#addRecipeDialog">
+      <i class="material-icons">add</i>
+    <div class="ripple-container"></div></button>
+  </div>
+
+
+
+  <!-- MODALS -->
+
+  <div id="addRecipeDialog" class="projectModal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-body modal-content modal-lg">
+      <div class="page-container">
+        <h2>Add Recipe:</h2>
+      </div>
+      <div class="page-container">
+        <form action="/action_page.php">
+          <label for="fname">Recipe Name:</label>
+          <input type="text" id="recipeName" name="username"><br><br>
+          <label for="lname">Image:</label>
+          <input type="text" id="recipeImage" name="password"><br><br>
+          <label for="lname">Instructions:</label>
+          <input type="text" id="recipeInstructions" name="password"><br><br>
+          <label for="lname">Meal Type:</label>
+          <input type="text" id="recipeMealType" name="password"><br><br>
+          <label for="lname">Prep Time:</label>
+          <input type="int" id="recipePrepTime" name="password"><br><br>
+          <a href="profilePage.html"><input id="insertRecipeButton" type="button" value="Insert Recipe"></a>
+          <a href="profilePage.html"><input id="updateRecipeButton" type="button" value="Update Recipe"></a>
+          <a href="profilePage.html"><input id="deleteRecipeButton" type="button" value="Delete Recipe"></a>
+        </form>
+      </div>
+      <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+        <i class="exitmodal"></i> Close
+      </a>
+    </div>
+  </div>
+
+  <div id="createAccountModal" class="projectModal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-body modal-content modal-lg">
+      <div class="page-container">
+        <h2>Create an Account:</h2>
+      </div>
+      <div class="page-container">
+        <form action="/action_page.php">
+          <label for="fname">Username:</label>
+          <input type="text" id="username" name="username"><br><br>
+          <label for="lname">Password:</label>
+          <input type="text" id="password" name="password"><br><br>
+          <a href="profilePage.html"><input id="createNewAccountButton" type="button" value="Submit"></a>
+        </form>
+      </div>
+
+      <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+        <i class="exitmodal"></i> Close
+      </a>
+    </div>
+  </div>
+
+  <div id="changeProfilePicModal" class="projectModal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-body modal-content modal-lg">
+      <div class="page-container">
+        <h2>Change Profile Picture:</h2>
+      </div>
+      <div class="page-container">
+        <form action="/action_page.php">
+          <label for="fname">Insert an Image:</label>
+          <input type="text" id="Image" name="Image"><br><br>
+          <a href="profilePage.html"><input id="createNewAccountButton" type="button" value="Submit"></a>
+        </form>
+      </div>
+
+      <button id="fab" type="button" class="btn bmd-btn-fab" data-toggle="modal" data-target="#addPicDialog">
+        <i class="material-icons">add</i>
+      </button>
+    </div>
+  </div>
+
+
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <!-- <script src="scripts/require.js"></script> -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

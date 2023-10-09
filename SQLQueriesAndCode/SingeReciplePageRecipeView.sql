@@ -1,0 +1,9 @@
+--NOT FINISHED
+
+USE CSSE333_S2G2_FinalProjectDB
+GO
+
+CREATE VIEW dbo.SingleRecipe AS
+SELECT *
+FROM Recipe r
+WHERE r.ID = 
